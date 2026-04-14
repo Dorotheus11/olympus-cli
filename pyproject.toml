@@ -1,0 +1,13 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "olympus-cli"
+version = "0.1.0"
+description = "CLI tool for managing Mount Olympus services"
+requires-python = ">= 3.11"
+dependencies = ["click>=8.0", "httpx>=0.24", "rich>=13.0"]
+
+[project.scripts]
+olympus = "olympus_cli.main:cli"
